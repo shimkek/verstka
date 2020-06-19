@@ -1,15 +1,19 @@
-header {
-    color: white;
-    background-color: #FD739C;
+body {
+    font-size: 20px;
+    line-height: 34px;
 }
-
+  
+header,
+nav {
+    background-color: #fd739c;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
 h1,
 h2 {
-    font-family: Arial;
+    font-family: Arial, Helvetica, sans-serif;
 }
-p,
-aside,
-li {
-    font-size: 20px;
-    line-height: 30px;
+#whoami {
+    
 }

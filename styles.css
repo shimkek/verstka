@@ -1,0 +1,15 @@
+header {
+    color: white;
+    background-color: #FD739C;
+}
+
+h1,
+h2 {
+    font-family: Arial;
+}
+p,
+aside,
+li {
+    font-size: 20px;
+    line-height: 30px;
+}

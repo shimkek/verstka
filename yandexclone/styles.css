@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.test {
+  background-color: chartreuse;
+  height: 2000px;
+}
+.main-body {
+  width: 1420px;
+  margin-top: 86px;
+  margin-left: auto;
+  margin-right: auto;
+  border-right-style: solid;
+  border-left-style: solid;
+  background-color: #f3f3f3;
+  border-color: rgb(241, 241, 241);
+  border-width: 1px;
+}
+.header-content {
+  display: flex;
+  align-content: center;
+  width: 1420px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+.page-header {
+  top: 0px;
+  height: 80px;
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom-style: solid;
+  border-color: rgb(241, 241, 241);
+  border-width: 1px;
+  position: fixed;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  border-style: solid;
+  color: #ffffff;
+  border-color: rgb(241, 241, 241);
+  border-width: 1px;
+}
+
+.main-banner {
+  background-image: url(https://yastatic.net/s3/eda-front/prod-www/assets/default-d3a889e26c9ac9089ce5b007da1ac51b.png);
+  height: 334px;
+  align-content: center;
+  color: #ffffff;
+  font-size: 50px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: -8px;
+  padding-right: -8px;
+}
+  
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  padding-left: 8px;
+  padding-right: 8px;
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: rgb(228, 87, 5);
+}
+
+.col-1 {
+  flex-basis: 8.3333%;
+}
+.col-2 {
+  flex-basis: 16.6666%;
+}
+.col-3 {
+  flex-basis: 24.9999%;
+}
+.col-4 {
+  flex-basis: 33.3333%;
+}
+.col-5 {
+  flex-basis: 41.6665%;
+}
+.col-6 {
+  flex-basis: 49.9998%;
+}
+.col-7 {
+  flex-basis: 58.3331%;
+}
+.col-8 {
+  flex-basis: 66.6664%;
+}
+.col-9 {
+  flex-basis: 74.9997%;
+}
+.col-10 {
+  flex-basis: 83.3333%;
+}
+.col-11 {
+  flex-basis: 91.6663%;
+}
+.col-12 {
+  flex-basis: 100%;
+}

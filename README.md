@@ -1,1 +1,1 @@
-# Yandex Eda clone
+# Web dev practice tasks

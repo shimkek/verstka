@@ -94,7 +94,7 @@ button {
 }
 .main-banner {
   margin-top: 90px;
-  border-radius: 4px 46px 0 0;
+  border-radius: 4px 4px 0 0;
   height: 334px;
   color: #ffffff;
   align-content: center;
@@ -124,6 +124,7 @@ button {
 
 }
 .banner-input {
+  display: flex;
   height: 56px;
 }
 .banner-input_adress {
@@ -230,8 +231,6 @@ background: #f5f5f5;
 }
 .price {
   display: inline;
-  width: 50px;
-  height: 22px;
   padding-left:22px;
   padding-top: 2px;
   background: no-repeat url(https://yastatic.net/s3/eda-front/prod-www/assets/wallet-023035338ccfe66eaa8654c666274ff5.svg);

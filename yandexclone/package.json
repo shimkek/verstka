@@ -2,9 +2,9 @@
   "name": "verstka",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "main": "ssrc/index.html",
   "scripts": {
-    "serve": "parcel serve index.html"
+    "serve": "parcel serve src/index.html"
   },
   "author": "",
   "license": "ISC",

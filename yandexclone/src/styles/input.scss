@@ -1,0 +1,15 @@
+$white: #ffffff;
+$border-color: rgb(241, 241, 241);
+$yandex-yellow: rgb(252, 224, 0);
+
+
+@import './blocks/base.scss';
+@import './blocks/header.scss';
+@import './blocks/banner.scss';
+@import './blocks/adress-filters.scss';
+@import './blocks/base.scss';
+@import './blocks/card.scss';
+@import './blocks/footer.scss';
+@import './blocks/promo.scss';
+@import './blocks/restaurant-search.scss';
+@import './blocks/restaurants.scss';

@@ -2,6 +2,3 @@ node_modules
 dist
 .parcel-cache
 .sassrc
-input.scss
-output.css.map
-output.css

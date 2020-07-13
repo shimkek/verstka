@@ -2,7 +2,28 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="./styles.css">
+    <meta charset="utf-8">
+    <title>Яндекс.Еда</title>
+    <link rel="icon" href="https://eda.yandex/favicon.ico">
+    <meta httpequiv="Content-Language" content="ru">
+    <meta name="og:title" content="Яндекс.Еда - быстрая доставка еды из ресторанов">
+    <meta property="og:site_name" content="Яндекс.Еда">
+    <meta name="og:image" content="https://eda.yandex/img/foodfox-share.jpg?v=2">
+    <meta name="keywords" content="Еда, Купить, Заказать, Доставка, Яндекс, Онлайн, 
+    Быстрая доставка еды в Москве, Бесплатная доставка еды в Москве, 
+    Круглосуточная доставка еды в Москве">
+    <meta name="description" content="Закажите еду из ресторанов в Москве — с быстрой доставкой 
+    за 32 минуты.
+    Мы тщательно выбираем рестораны, чтобы предложить вам достойный сервис и вкусную еду в в Москве.
+    Сделать заказ можно в мобильном приложении или на сайте. Оплатить — наличными или банковской 
+    картой.">
+    <meta name="og:description" content="Закажите еду из ресторанов в Москве — с быстрой доставкой 
+    за 32 минуты.
+    Мы тщательно выбираем рестораны, чтобы предложить вам достойный сервис и вкусную еду в в Москве.
+    Сделать заказ можно в мобильном приложении или на сайте. Оплатить — наличными или банковской 
+    картой.">
+    <meta name="author" content="Shimkek Nakamoto">
+    <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./normalize.css">
     <script src="./app.js"></script>
 </head>
@@ -10,249 +31,252 @@
 <body>
 
     <header>
-        <div class="page-header">
-            <div class="page-header_content">
-                <div class="page-header_logo">
-                    <img class="header_logo_pic" src="https://yastatic.net/s3/eda-front/prod-www/assets/logo-2b8cf6236b94ab214aa24b00ce106d16.svg">
+        <div class="header">
+            <div class="header__content">
+                <div class="header__logo">
+                    <img class="header__logo-pic" 
+                    src="https://yastatic.net/s3/eda-front/prod-www/assets/logo-2b8cf6236b94ab214aa24b00ce106d16.svg"
+                    alt="Вкусные блюда из доставки разложенные по столу">
                 </div>
-                <div class="page-header_companies-links">
-                    <a class="page-header_link">Ресторанам</a>
-                    <a class="page-header_link">Курьерам</a>
-                    <a class="page-header_link">Компаниям</a>
+                <div class="header__companies-links">
+                    <a class="header__link">Ресторанам</a>
+                    <a class="header__link">Курьерам</a>
+                    <a class="header__link">Компаниям</a>
                 </div>
-                <div class="page-header_button">
-                    <button>Москва</button>
+                <div class="header__button">
+                    <button class="button">Москва</button>
                 </div>
-                <div class="page-header_button">
-                    <button>Войти</button>
+                <div class="header__button">
+                    <button class="button">Войти</button>
                 </div>
             </div>
         </div>
     </header>
 
-<div class="page-body">
+<div class="body">
 
         <div class="banner">
-            <div class="banner_content">
-                <div class="banner_links">
+            <div class="banner__content">
+                <div class="banner__links">
                     <a>Яндекс.Еда</a>
                     <a>Москва</a>
                 </div>
-                <h1 class="banner_main-text">
+                <h1 class="banner__main-text">
                     Быстрая доставка еды
                     <br>в Москве
                 </h1>
-                <div class="banner_input">
-                    <input class="banner_input_adress" type="text" value autocomplete="off"  placeholder="Укажите адрес доставки...">
-                    <button class="banner_input_button">Показать рестораны</button>
+                <div class="banner__input">
+                    <input class="banner__input-adress" type="text" value autocomplete="off"  
+                    placeholder="Укажите адрес доставки...">
+                    <button class="button banner__input-button">Показать рестораны</button>
                 </div>
             </div>
         </div>
 
         <div class="adress-filters">
-            <a class="adress-filters_option adress-filters_option_chosen">Все</a>
-            <a class="adress-filters_option">Усачевский</a>
-            <a class="adress-filters_option">Ангара</a>
-            <a class="adress-filters_option">Green Market</a>
-            <a class="adress-filters_option">Вокруг Света</a>
-            <a class="adress-filters_option">strEAT</a>
-            <a class="adress-filters_option">Брикет маркет</a>
-            <a class="adress-filters_option">Депо</a>
-            <a class="adress-filters_option">Бургеры</a>
-            <a class="adress-filters_option">Суши</a>
-            <a class="adress-filters_option">Пицца</a>
-            <a class="adress-filters_option">Ещё</a>           
+            <a class="adress-filters__option adress-filters__option_chosen">Все</a>
+            <a class="adress-filters__option">Усачевский</a>
+            <a class="adress-filters__option">Ангара</a>
+            <a class="adress-filters__option">Green Market</a>
+            <a class="adress-filters__option">Вокруг Света</a>
+            <a class="adress-filters__option">strEAT</a>
+            <a class="adress-filters__option">Брикет маркет</a>
+            <a class="adress-filters__option">Депо</a>
+            <a class="adress-filters__option">Бургеры</a>
+            <a class="adress-filters__option">Суши</a>
+            <a class="adress-filters__option">Пицца</a>
+            <a class="adress-filters__option">Ещё</a>           
         </div>
         
         <div class="restaurant-search">
-            <input class="restaurant-search_input" placeholder="Название, кухня или блюдо">
+            <input class="restaurant-search__input" placeholder="Название, кухня или блюдо">
         </div>
 
-    <div class="promo-container">
-        <div class="promo-content">
-            <h2 class="container-tittle">Акции</h2>
+    <div class="promo">
+        <div class="promo__content">
+            <h2 class="container-tittle_1">Акции</h2>
             <div class="card">
-                <div class="card_image"></div>
-                <div class="card_info">
-                    <h3 class="card_shop-name">Название магазина</h3>
-                    <div class="card_price-rating">
-                        <div class="card_rating">5.0</div>
-                        <div class="card_price">₽₽₽</div>
+                <div class="card__image"></div>
+                <div class="card__info">
+                    <h3 class="card__shop-name">Название магазина</h3>
+                    <div class="card__price-rating">
+                        <div class="card__rating">5.0</div>
+                        <div class="card__price">₽₽₽</div>
                     </div>
                 </div>
             </div>
             <div class="card">
-                <div class="card_image"></div>
-                <div class="card_info">
-                    <h3 class="card_shop-name">Название магазина</h3>
-                    <div class="card_price-rating">
-                        <div class="card_rating">5.0</div>
-                        <div class="card_price">₽₽₽</div>
+                <div class="card__image"></div>
+                <div class="card__info">
+                    <h3 class="card__shop-name">Название магазина</h3>
+                    <div class="card__price-rating">
+                        <div class="card__rating">5.0</div>
+                        <div class="card__price">₽₽₽</div>
                     </div>
                 </div>
             </div>
             <div class="card">
-                <div class="card_image"></div>
-                <div class="card_info">
-                    <h3 class="card_shop-name">Название магазина</h3>
-                    <div class="card_price-rating">
-                        <div class="card_rating">5.0</div>
-                        <div class="card_price">₽₽₽</div>
+                <div class="card__image"></div>
+                <div class="card__info">
+                    <h3 class="card__shop-name">Название магазина</h3>
+                    <div class="card__price-rating">
+                        <div class="card__rating">5.0</div>
+                        <div class="card__price">₽₽₽</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="restaurants-container">
-        <div class="restaurants">
+    <div class="restaurants">
+        <div class="restaurants__wrapper">
             <h2 class="container-tittle_2">Рестораны</h2>
             <div class="card">
-                <div class="card_image"></div>
-                <div class="card_info">
-                    <h3 class="card_shop-name">Название магазина</h3>
-                    <div class="card_price-rating">
-                        <div class="card_rating">5.0</div>
-                        <div class="card_price">₽₽₽</div>
+                <div class="card__image"></div>
+                <div class="card__info">
+                    <h3 class="card__shop-name">Название магазина</h3>
+                    <div class="card__price-rating">
+                        <div class="card__rating">5.0</div>
+                        <div class="card__price">₽₽₽</div>
                     </div>
                 </div>
             </div>
             <div class="card">
-                <div class="card_image"></div>
-                <div class="card_info">
-                    <h3 class="card_shop-name">Название магазина</h3>
-                    <div class="card_price-rating">
-                        <div class="card_rating">5.0</div>
-                        <div class="card_price">₽₽₽</div>
+                <div class="card__image"></div>
+                <div class="card__info">
+                    <h3 class="card__shop-name">Название магазина</h3>
+                    <div class="card__price-rating">
+                        <div class="card__rating">5.0</div>
+                        <div class="card__price">₽₽₽</div>
                     </div>
                 </div>
             </div>
             <div class="card">
-                <div class="card_image"></div>
-                <div class="card_info">
-                    <h3 class="card_shop-name">Название магазина</h3>
-                    <div class="card_price-rating">
-                        <div class="card_rating">5.0</div>
-                        <div class="card_price">₽₽₽</div>
+                <div class="card__image"></div>
+                <div class="card__info">
+                    <h3 class="card__shop-name">Название магазина</h3>
+                    <div class="card__price-rating">
+                        <div class="card__rating">5.0</div>
+                        <div class="card__price">₽₽₽</div>
                     </div>
                 </div>
             </div>
             <div class="card">
-                <div class="card_image"></div>
-                <div class="card_info">
-                    <h3 class="card_shop-name">Название магазина</h3>
-                    <div class="card_price-rating">
-                        <div class="card_rating">5.0</div>
-                        <div class="card_price">₽₽₽</div>
+                <div class="card__image"></div>
+                <div class="card__info">
+                    <h3 class="card__shop-name">Название магазина</h3>
+                    <div class="card__price-rating">
+                        <div class="card__rating">5.0</div>
+                        <div class="card__price">₽₽₽</div>
                     </div>
                 </div>
             </div>
             <div class="card">
-                <div class="card_image"></div>
-                <div class="card_info">
-                    <h3 class="card_shop-name">Название магазина</h3>
-                    <div class="card_price-rating">
-                        <div class="card_rating">5.0</div>
-                        <div class="card_price">₽₽₽</div>
+                <div class="card__image"></div>
+                <div class="card__info">
+                    <h3 class="card__shop-name">Название магазина</h3>
+                    <div class="card__price-rating">
+                        <div class="card__rating">5.0</div>
+                        <div class="card__price">₽₽₽</div>
                     </div>
                 </div>
             </div>
             <div class="card">
-                <div class="card_image"></div>
-                <div class="card_info">
-                    <h3 class="card_shop-name">Название магазина</h3>
-                    <div class="card_price-rating">
-                        <div class="card_rating">5.0</div>
-                        <div class="card_price">₽₽₽</div>
+                <div class="card__image"></div>
+                <div class="card__info">
+                    <h3 class="card__shop-name">Название магазина</h3>
+                    <div class="card__price-rating">
+                        <div class="card__rating">5.0</div>
+                        <div class="card__price">₽₽₽</div>
                     </div>
                 </div>
             </div>
             <div class="card">
-                <div class="card_image"></div>
-                <div class="card_info">
-                    <h3 class="card_shop-name">Название магазина</h3>
-                    <div class="card_price-rating">
-                        <div class="card_rating">5.0</div>
-                        <div class="card_price">₽₽₽</div>
+                <div class="card__image"></div>
+                <div class="card__info">
+                    <h3 class="card__shop-name">Название магазина</h3>
+                    <div class="card__price-rating">
+                        <div class="card__rating">5.0</div>
+                        <div class="card__price">₽₽₽</div>
                     </div>
                 </div>
             </div>
             <div class="card">
-                <div class="card_image"></div>
-                <div class="card_info">
-                    <h3 class="card_shop-name">Название магазина</h3>
-                    <div class="card_price-rating">
-                        <div class="card_rating">5.0</div>
-                        <div class="card_price">₽₽₽</div>
+                <div class="card__image"></div>
+                <div class="card__info">
+                    <h3 class="card__shop-name">Название магазина</h3>
+                    <div class="card__price-rating">
+                        <div class="card__rating">5.0</div>
+                        <div class="card__price">₽₽₽</div>
                     </div>
                 </div>
             </div>
             <div class="card">
-                <div class="card_image"></div>
-                <div class="card_info">
-                    <h3 class="card_shop-name">Название магазина</h3>
-                    <div class="card_price-rating">
-                        <div class="card_rating">5.0</div>
-                        <div class="card_price">₽₽₽</div>
+                <div class="card__image"></div>
+                <div class="card__info">
+                    <h3 class="card__shop-name">Название магазина</h3>
+                    <div class="card__price-rating">
+                        <div class="card__rating">5.0</div>
+                        <div class="card__price">₽₽₽</div>
                     </div>
                 </div>
             </div>
             <div class="card">
-                <div class="card_image"></div>
-                <div class="card_info">
-                    <h3 class="card_shop-name">Название магазина</h3>
-                    <div class="card_price-rating">
-                        <div class="card_rating">5.0</div>
-                        <div class="card_price">₽₽₽</div>
+                <div class="card__image"></div>
+                <div class="card__info">
+                    <h3 class="card__shop-name">Название магазина</h3>
+                    <div class="card__price-rating">
+                        <div class="card__rating">5.0</div>
+                        <div class="card__price">₽₽₽</div>
                     </div>
                 </div>
             </div>
             <div class="card">
-                <div class="card_image"></div>
-                <div class="card_info">
-                    <h3 class="card_shop-name">Название магазина</h3>
-                    <div class="card_price-rating">
-                        <div class="card_rating">5.0</div>
-                        <div class="card_price">₽₽₽</div>
+                <div class="card__image"></div>
+                <div class="card__info">
+                    <h3 class="card__shop-name">Название магазина</h3>
+                    <div class="card__price-rating">
+                        <div class="card__rating">5.0</div>
+                        <div class="card__price">₽₽₽</div>
                     </div>
                 </div>
             </div>
             <div class="card">
-                <div class="card_image"></div>
-                <div class="card_info">
-                    <h3 class="card_shop-name">Название магазина</h3>
-                    <div class="card_price-rating">
-                        <div class="card_rating">5.0</div>
-                        <div class="card_price">₽₽₽</div>
+                <div class="card__image"></div>
+                <div class="card__info">
+                    <h3 class="card__shop-name">Название магазина</h3>
+                    <div class="card__price-rating">
+                        <div class="card__rating">5.0</div>
+                        <div class="card__price">₽₽₽</div>
                     </div>
                 </div>
             </div>
             <div class="card">
-                <div class="card_image"></div>
-                <div class="card_info">
-                    <h3 class="card_shop-name">Название магазина</h3>
-                    <div class="card_price-rating">
-                        <div class="card_rating">5.0</div>
-                        <div class="card_price">₽₽₽</div>
+                <div class="card__image"></div>
+                <div class="card__info">
+                    <h3 class="card__shop-name">Название магазина</h3>
+                    <div class="card__price-rating">
+                        <div class="card__rating">5.0</div>
+                        <div class="card__price">₽₽₽</div>
                     </div>
                 </div>
             </div>
             <div class="card">
-                <div class="card_image"></div>
-                <div class="card_info">
-                    <h3 class="card_shop-name">Название магазина</h3>
-                    <div class="card_price-rating">
-                        <div class="card_rating">5.0</div>
-                        <div class="card_price">₽₽₽</div>
+                <div class="card__image"></div>
+                <div class="card__info">
+                    <h3 class="card__shop-name">Название магазина</h3>
+                    <div class="card__price-rating">
+                        <div class="card__rating">5.0</div>
+                        <div class="card__price">₽₽₽</div>
                     </div>
                 </div>
             </div>
             <div class="card">
-                <div class="card_image"></div>
-                <div class="card_info">
-                    <h3 class="card_shop-name">Название магазина</h3>
-                    <div class="card_price-rating">
-                        <div class="card_rating">5.0</div>
-                        <div class="card_price">₽₽₽</div>
+                <div class="card__image"></div>
+                <div class="card__info">
+                    <h3 class="card__shop-name">Название магазина</h3>
+                    <div class="card__price-rating">
+                        <div class="card__rating">5.0</div>
+                        <div class="card__price">₽₽₽</div>
                     </div>
                 </div>
             </div>
@@ -262,49 +286,49 @@
 </div>
  
 <footer class="footer">
-<div class="footer_appstore">
-    <div class="app-market-links">
-        <div class="footer_yandexeda-logo">
+<div class="footer__appstore">
+    <div class="footer__app-market-links">
+        <div class="footer__yandexeda-logo">
         </div>
-        <a class="footer_appstore-links">
-            <img src="https://i.imgur.com/E8rzy4V.png">
-            <img src="https://i.imgur.com/3Rn95wT.png">
+        <a class="footer__appstore-links">
+            <img src="https://i.imgur.com/E8rzy4V.png" alt="Доступно в AppStore">
+            <img src="https://i.imgur.com/3Rn95wT.png" alt="Доступно в PlayMarket">
         </a>
     </div>
 </div>
-<div class="footer_menus">
-    <div class="footer_column">
-        <p class="footer_bold">Регионы</p>
-        <a class="footer_link">Москва</a>
-        <a class="footer_link">Санкт-Петербург</a>
-        <a class="footer_link">Алматы</a>
-        <a class="footer_link">Александров</a>
-        <a class="footer_link">Омск</a>
+<div class="footer__menus">
+    <div class="footer__column">
+        <p class="footer__bold">Регионы</p>
+        <a class="footer__link">Москва</a>
+        <a class="footer__link">Санкт-Петербург</a>
+        <a class="footer__link">Алматы</a>
+        <a class="footer__link">Александров</a>
+        <a class="footer__link">Омск</a>
         
     </div>
-    <div class="footer_column">
-        <p class="footer_bold">Блюда и кухни</p>
-        <a class="footer_link">Green Market</a>
-        <a class="footer_link">StrEAT</a>
-        <a class="footer_link">JekaFatbellyDonerHouse</a>
-        <a class="footer_link">MacDonalds</a>
-        <a class="footer_link">Food Time</a>
+    <div class="footer__column">
+        <p class="footer__bold">Блюда и кухни</p>
+        <a class="footer__link">Green Market</a>
+        <a class="footer__link">StrEAT</a>
+        <a class="footer__link">JekaFatbellyDonerHouse</a>
+        <a class="footer__link">MacDonalds</a>
+        <a class="footer__link">Food Time</a>
     </div>
-    <div class="footer_column footer_column_right-side-aligned">
-        <p class="footer_bold">О компании</p>
-        <a class="footer_link">Контакты</a>
-        <a class="footer_link">Доставка</a>
-        <a class="footer_link">Пользовательское соглашение</a>
-        <a class="footer_link">Вопросы и ответы</a>
-        <a class="footer_link">Стать партнёром</a>
-        <a class="footer_link">Стать курьером</a>
-        <a class="footer_link">Еда для бизнеса</a>
-        <a class="footer_link">Переработка пластика</a>
+    <div class="footer__column footer__column_right-side-aligned">
+        <p class="footer__bold">О компании</p>
+        <a class="footer__link">Контакты</a>
+        <a class="footer__link">Доставка</a>
+        <a class="footer__link">Пользовательское соглашение</a>
+        <a class="footer__link">Вопросы и ответы</a>
+        <a class="footer__link">Стать партнёром</a>
+        <a class="footer__link">Стать курьером</a>
+        <a class="footer__link">Еда для бизнеса</a>
+        <a class="footer__link">Переработка пластика</a>
     </div>
 </div>
-<div class="footer_bottomline">
+<div class="footer__bottomline">
     <div>© 2018–2020 ООО «Яндекс.Еда»</div>
-    <img class="footer_social-media_links" src="https://i.imgur.com/8DEqmrh.png">
+    <img class="footer__socialmedia-links" src="https://i.imgur.com/8DEqmrh.png" alt="Ссылки на соц.сети">
 </div>
 </footer>
 

@@ -1,0 +1,13 @@
+.promo {
+    border-bottom: 8px solid #fafafa;
+
+    &__content {
+        height: 425px;
+        width: 1260px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}

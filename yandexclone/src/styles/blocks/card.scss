@@ -1,0 +1,54 @@
+.card {
+    width: 392px;
+    height: 310px;
+    border-radius: 8px 8px 8px 8px;
+    margin: 0px 40px 0px 0px;
+    box-shadow: 0px 4px 40px rgb(230, 230, 230);
+    transition: transform .2s ease-in-out;
+    z-index: 0;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.06);
+    }
+
+    &__image {
+        width: 392px;
+        height: 212px;
+        border-radius: 8px 8px 0 0;
+        background-image: url("https://i.pinimg.com/originals/e1/29/b6/e129b655fbd710ebe0cb1bd68178c5d0.jpg");
+    }
+
+    &__info {
+        width: 352px;
+        height: 58px;
+        padding: 20px 20px 20px 20px;
+        border-radius: 0 0 8px 8px;
+    }
+
+    &__shop-name {
+        margin: 0;
+    }
+
+    &__price-rating {
+        height: 31px;
+        padding-top: 7px;
+    }
+
+    &__price {
+        display: inline;
+        padding-left:22px;
+        padding-top: 2px;
+        background: no-repeat url(https://yastatic.net/s3/eda-front/prod-www/assets/wallet-023035338ccfe66eaa8654c666274ff5.svg);
+    }
+
+    &__rating {
+        background: no-repeat url(https://yastatic.net/s3/eda-front/prod-www/assets/star-7d06c63fe36e881a6fdbfac4c3fa1f77.svg);
+        background-color: $yandex-yellow;
+        padding: 2px 3px 2px 20px;
+        border-radius: 8px 8px 8px 8px;
+        display: inline;
+        margin: 0px 5px 0px 0px;
+        font-size: 15px;
+    }
+}

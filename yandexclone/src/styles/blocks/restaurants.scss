@@ -1,0 +1,17 @@
+.restaurants {
+    padding-bottom: 20px;
+    border-bottom: rgb(241, 241, 241) 1px solid;
+
+    &__wrapper {
+        padding-top: 50px;
+        flex-direction: row;
+        height: 1700px;
+        flex-wrap: wrap;
+        width: 1300px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

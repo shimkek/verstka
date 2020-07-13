@@ -1,0 +1,62 @@
+.banner {
+    margin-top: 90px;
+    border-radius: 4px 4px 0 0;
+    height: 334px;
+    color: #ffffff;
+    align-content: center;
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  no-repeat  center 100% url(https://codeinspiration.pro/wp-content/themes/theme_ci_prod/img/verticals/food-delivery.jpg);
+
+    &__links {
+        color: #cccccc;
+        padding-right: 15px;
+    }
+
+    &__main-text {
+        font-size: 50px;
+        line-height: 1.2;
+        font-weight: 400;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    &__content {
+        width: 1260px;
+        height: 220px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 57px;
+        padding-bottom: 57px;
+        display: flex;
+        flex-direction: column;
+      
+    }
+
+    &__input {
+        display: flex;
+        height: 56px;
+    }
+
+    &__input-adress {
+        font-size: 18px;
+        height: 56px;
+        border: 1px solid #cccccc;
+        border-right: 0px;
+        font-size: 1.125rem;
+        border-radius: 4px 0 0 4px;
+        padding-left: 20px;
+        width: 650px;
+        font-weight: 500;
+        outline: none;
+    }
+
+    &__input-button {
+        height: 56px;
+        border-left: 0px;
+        background-color: $yandex-yellow;
+        border-radius: 0 6px 6px 0;
+        font-weight: bold;
+        outline: none;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

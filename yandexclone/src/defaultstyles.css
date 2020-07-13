@@ -5,60 +5,21 @@ body {
 }
 a {
   cursor: pointer;
-  text-decoration: none;
-  padding: inherit;
 }
-button {
-  color: #000;
+.button {
   height: 32px;
   border: 1px solid #ccc;
   cursor: pointer;
   padding: 7px 16px;
   display: inline-block;
-  font-size: 15px;
   background: transparent;
   box-shadow: none;
   line-height: 16px;
-  margin-left: 20px;
   white-space: nowrap;
   border-radius: 100px;
   outline: none;
 }
-.test {
-  height: 2000px;
-  background-color: bisque;
-}
-.page-header_link {
-  font-size: 16px;
-  margin: 0 20px;
-}
-.page-header_link:hover {
-  color: #cecece;
-}
-.page-header_button {
-  width: 90px;
-  height: 32px;
-  padding-left: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-content: space-between;
-  
-}
-.page-header_companies-links {
-  width: 1035px;
-  display: flex;
-  justify-content: center;
-}
-.page-header_logo{
-  width: 160px;
-  margin: 0 20px 0 0;
-  cursor: pointer;
-}
-.page-header_logo_pic {
-  width: 160px;
-}
-.page-body {
+.body {
   width: 1418px;
   margin-top: 86px;
   margin-left: auto;
@@ -70,18 +31,62 @@ button {
   border-width: 1px;
   margin-bottom: 20px;
 }
-.page-header_content {
-  font-family: Arial, Helvetica, sans-serif;
-  width: 1420px;
-  height: 80px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-content: space-between;
+.container-tittle_1 {
+  font-size: 30px;
+  margin-top: 10px;
+  position: absolute;
+  align-self: flex-start;
+  padding-right: 1200px;
 }
-.page-header {
+.container-tittle_2 {
+  font-size: 30px;
+  padding-left: 3px;
+  position: absolute;
+  align-self: flex-start;
+  margin-top: -35px;
+}
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .header__companies-links {
+      width: 790px;
+    }
+    .header__logo {
+      margin-right: 40px;
+    }
+    .body {
+      margin-top: -130px;
+      transform: scale(0.90);
+      margin-left: -40px;
+    }
+    .footer__appstore{
+      margin-top: -100px;
+    }
+    .app-market-links{
+      width: 1170px;
+    }
+    .footer__appstore-links {
+      margin-left: 680px;
+    }
+    .footer__menus {
+      width: 1170px;
+    }
+    .footer__bold {
+      font-size: 20px;
+    }
+    .footer__link {
+      font-size: 15px;
+      font-weight: 500;
+    }
+    .adress-filters__option {
+      font-size: 17px;
+      font-weight: 500;
+    }
+}
+
+
+.header {
   top: 0px;
   height: 80px;
   padding-bottom: -1px;
@@ -93,6 +98,48 @@ button {
   position: fixed;
   z-index: 1;
 }
+.header__link {
+  font-size: 16px;
+  margin: 0 20px;
+}
+.header__link:hover {
+  color: #cecece;
+}
+.header__button {
+  font-size: 14px;
+  width: 90px;
+  height: 32px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: space-between;
+  
+}
+.header__companies-links {
+  width: 1035px;
+  display: flex;
+  justify-content: center;
+}
+.header__logo{
+  width: 160px;
+  margin: 0 20px 0 0;
+  cursor: pointer;
+}
+.header__logo-pic {
+  width: 160px;
+}
+.header__content {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 1420px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: space-between;
+}
 .banner {
   margin-top: 90px;
   border-radius: 4px 4px 0 0;
@@ -102,18 +149,18 @@ button {
   background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  no-repeat  center 100% url(https://codeinspiration.pro/wp-content/themes/theme_ci_prod/img/verticals/food-delivery.jpg);
 
 }
-.banner_links {
+.banner__links {
   color: #cccccc;
   padding-right: 15px;
 }
-.banner_main-text {
+.banner__main-text {
   font-size: 50px;
   line-height: 1.2;
-  font-weight: 400;
+  font-weight: 500;
   margin-top: 10px;
   margin-bottom: 20px;
 }
-.banner_content {
+.banner__content {
   width: 1260px;
   height: 220px;
   margin-right: auto;
@@ -124,14 +171,15 @@ button {
   flex-direction: column;
 
 }
-.banner_input {
+.banner__input {
   display: flex;
   height: 56px;
 }
-.banner_input_adress {
+.banner__input-adress {
   font-size: 18px;
   height: 56px;
   border: 1px solid #cccccc;
+  border-right: 0px;
   font-size: 1.125rem;
   border-radius: 4px 0 0 4px;
   padding-left: 20px;
@@ -139,8 +187,9 @@ button {
   font-weight: 500;
   outline: none;
 }
-.banner_input_button {
+.banner__input-button {
   height: 56px;
+  border-left: 0px;
   background-color: rgb(252, 224, 0);
   border-radius: 0 6px 6px 0;
   font-weight: bold;
@@ -160,14 +209,14 @@ button {
   margin-left: auto;
   width: 1260px;
 }
-.adress-filters_option {
+.adress-filters__option {
   padding: 10px 18px;
   border-radius: 20px 20px 20px 20px;
 }
-.adress-filters_option:hover {
+.adress-filters__option:hover {
 background: #f5f5f5;
 }
-.adress-filters_option_chosen {
+.adress-filters__option_chosen {
   background: rgb(252, 224, 0);
   padding: 12px 18px;
   border-radius: 20px 20px 20px 20px;
@@ -181,7 +230,7 @@ background: #f5f5f5;
   align-items: center;
   justify-content: space-around;
 }
-.restaurant-search_input {
+.restaurant-search__input {
   width: 1258px;
   height: 46px;
   border: 1px solid #cccccc;
@@ -189,7 +238,10 @@ background: #f5f5f5;
   padding-left: 20px;
   outline: none;
 }
-.promo-content {
+.promo {
+  border-bottom: 8px solid #fafafa;
+}
+.promo__content {
   height: 425px;
   width: 1260px;
   margin-left: auto;
@@ -211,32 +263,32 @@ background: #f5f5f5;
 .card:hover {
   transform: scale(1.06);
 }
-.card_image {
+.card__image {
   width: 392px;
   height: 212px;
   border-radius: 8px 8px 0 0;
   background-image: url("https://i.pinimg.com/originals/e1/29/b6/e129b655fbd710ebe0cb1bd68178c5d0.jpg");
 }
-.card_info {
+.card__info {
   width: 352px;
   height: 58px;
   padding: 20px 20px 20px 20px;
   border-radius: 0 0 8px 8px;
 }
-.card_shop-name {
+.card__shop-name {
   margin: 0;
 }
-.card_price-rating {
+.card__price-rating {
   height: 31px;
   padding-top: 7px;
 }
-.card_price {
+.card__price {
   display: inline;
   padding-left:22px;
   padding-top: 2px;
   background: no-repeat url(https://yastatic.net/s3/eda-front/prod-www/assets/wallet-023035338ccfe66eaa8654c666274ff5.svg);
 }
-.card_rating {
+.card__rating {
   background: no-repeat url(https://yastatic.net/s3/eda-front/prod-www/assets/star-7d06c63fe36e881a6fdbfac4c3fa1f77.svg);
   background-color: rgb(252, 224, 0);
   padding: 2px 3px 2px 20px;
@@ -245,24 +297,7 @@ background: #f5f5f5;
   margin: 0px 5px 0px 0px;
   font-size: 15px;
 }
-.container-tittle {
-  font-size: 30px;
-  margin-top: 10px;
-  position: absolute;
-  align-self: flex-start;
-  padding-right: 1200px;
-}
-.container-tittle_2 {
-  font-size: 30px;
-  padding-left: 3px;
-  position: absolute;
-  align-self: flex-start;
-  margin-top: -35px;
-}
-.promo-container {
-  border-bottom: 8px solid #fafafa;
-}
-.restaurants {
+.restaurants__wrapper {
   padding-top: 50px;
   flex-direction: row;
   height: 1700px;
@@ -274,7 +309,7 @@ background: #f5f5f5;
   align-items: center;
   justify-content: space-between;
 }
-.restaurants-container {
+.restaurants {
   padding-bottom: 20px;
   border-bottom: rgb(241, 241, 241) 1px solid;
 }
@@ -283,7 +318,7 @@ background: #f5f5f5;
   height: fit-content;
   background-color: rgb(248, 248, 248);
 }
-.app-market-links {
+.footer__app-market-links {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -292,19 +327,19 @@ background: #f5f5f5;
   margin-left: auto;
   margin-right: auto;
 }
-.footer_yandexeda-logo {
+.footer__yandexeda-logo {
   margin-left: -25px;
   width: 170px;
   height: 50px;
   background-image: url("https://i.imgur.com/Ykbrl3g.png");
 }
-.footer_appstore-links {
+.footer__appstore-links {
   margin-left: 800px;
 }
-.footer_appstore {
+.footer__appstore {
   border-bottom:rgb(230, 230, 230) 1px solid;
 }
-.footer_menus {
+.footer__menus {
   box-sizing: border-box;
   display: flex;
   position: relative;
@@ -315,29 +350,29 @@ background: #f5f5f5;
   margin-left: auto;
   margin-right: auto;
 }
-.footer_bold {
+.footer__bold {
   font-weight: bold;
   font-size: 17px;
   padding-bottom: 12px;
 }
-.footer_column {
+.footer__column {
   margin-right: 100px;
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
 }
-.footer_link {
+.footer__link {
   font-size: 14px;
   margin-bottom: 20px;
   color: #ccc;
 }
-.footer_column_right-side-aligned {
+.footer__column_right-side-aligned {
   position: absolute;
   right: 150px;
   text-align: right;
   margin-right: -100px;
 }
-.footer_bottomline {
+.footer__bottomline {
   margin: 0 auto;
   display: flex;
   padding: 30px 120px 30px 103px;
@@ -345,45 +380,6 @@ background: #f5f5f5;
   align-items: center;
   border-top:rgb(230, 230, 230) 1px solid;
 }
-.footer_social-media_links {
+.footer__socialmedia-links {
   margin-left: 830px;
-}
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
-    .page-header_companies-links {
-      width: 790px;
-    }
-    .page-header_logo {
-      margin-right: 40px;
-    }
-    .page-body {
-      margin-top: -130px;
-      transform: scale(0.90);
-      margin-left: -40px;
-    }
-    .footer_appstore{
-      margin-top: -100px;
-    }
-    .app-market-links{
-      width: 1170px;
-    }
-    .footer_appstore-links {
-      margin-left: 680px;
-    }
-    .footer_menus {
-      width: 1170px;
-    }
-    .footer_bold {
-      font-size: 20px;
-    }
-    .footer_link {
-      font-size: 15px;
-      font-weight: 500;
-    }
-    .adress-filters_option {
-      font-size: 17px;
-      font-weight: 500;
-    }
 }

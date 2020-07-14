@@ -2,9 +2,9 @@
   "name": "verstka",
   "version": "1.0.0",
   "description": "",
-  "main": "ssrc/index.html",
+  "main": "build/index.html",
   "scripts": {
-    "serve": "parcel serve src/index.html"
+    "dev": "parcel serve src/index.html --dist-dir build --open"
   },
   "author": "",
   "license": "ISC",

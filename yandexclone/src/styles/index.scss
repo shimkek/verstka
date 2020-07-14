@@ -2,8 +2,8 @@ $white: #ffffff;
 $border-color: rgb(241, 241, 241);
 $yandex-yellow: rgb(252, 224, 0);
 
-
-@import './blocks/base.scss';
+@import './normalize.css';
+@import './base.scss';
 @import './blocks/header.scss';
 @import './blocks/banner.scss';
 @import './blocks/adress-filters.scss';
@@ -12,3 +12,4 @@ $yandex-yellow: rgb(252, 224, 0);
 @import './blocks/promo.scss';
 @import './blocks/restaurant-search.scss';
 @import './blocks/restaurants.scss';
+@import './mediaquaries.scss';

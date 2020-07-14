@@ -1,0 +1,39 @@
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .header__companies-links {
+      width: 790px;
+    }
+    .header__logo {
+      margin-right: 40px;
+    }
+    .body {
+      margin-top: -130px;
+      transform: scale(0.90);
+      margin-left: -40px;
+    }
+    .footer__appstore{
+      margin-top: -100px;
+    }
+    .app-market-links{
+      width: 1170px;
+    }
+    .footer__appstore-links {
+      margin-left: 680px;
+    }
+    .footer__menus {
+      width: 1170px;
+    }
+    .footer__bold {
+      font-size: 20px;
+    }
+    .footer__link {
+      font-size: 15px;
+      font-weight: 500;
+    }
+    .adress-filters__option {
+      font-size: 17px;
+      font-weight: 500;
+    }
+}

@@ -2,7 +2,7 @@
   "name": "picturegallery",
   "version": "1.0.0",
   "description": "",
-  "main": "build/index.html",
+  "main": "src/index.js",
   "scripts": {
     "dev": "parcel serve src/index.html --out-dir build --open"
   },

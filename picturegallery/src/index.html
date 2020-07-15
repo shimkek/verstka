@@ -4,41 +4,52 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Film posters</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png">
-    <link rel="manifest" href="./icons/site.webmanifest">
+    <title>Pictures</title>
     <link rel="stylesheet" href="./styles/index.scss">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="icons/site.webmanifest">
+    <script src="./index.js"></script>
+    <script src="./scripts.js"></script>
 </head>
 
 <body class="body">
     <header class="header">
         <div class="header__contents">
             <a class="header__logo" href="./index.html">
-                <img src="/icons/android-chrome-192x192.png"> 
+                <img class="header__pic" src="./icons/android-chrome-192x192.png" alt="logo">
             </a>
-            <a class="header__name" href="./index.html">
-                Film posters
-            </a>
+            <p class="header__name">Gallery</p>
         </div>
     </header>
 
-    <div class="gallery">
-        <div class="gallery__poster">1</div>
-        <div class="gallery__poster">2</div>
-        <div class="gallery__poster">3</div>
-        <div class="gallery__poster">4</div>
-        <div class="gallery__poster">5</div>
-        <div class="gallery__poster">6</div>
+    <div class="gallery" id="gallery">
+        <div class="gallery__poster">
+            <img class="gallery__img" src="https://picsum.photos/g/1920/1080">
+        </div>
+        <div class="gallery__poster">
+            <img class="gallery__img" src="https://picsum.photos/g/1920/1080">
+        </div>
+        <div class="gallery__poster">
+            <img class="gallery__img" src="https://picsum.photos/1920/1080">
+        </div>
+        <div class="gallery__poster">
+            <img class="gallery__img" src="https://picsum.photos/1920/1080">
+        </div>
+        <div class="gallery__poster">
+            <img class="gallery__img" src="https://picsum.photos/1920/1080">
+        </div>
+        <div class="gallery__poster">
+            <img class="gallery__img" src="https://picsum.photos/1920/1080">
+        </div>
     </div>
-    
+
     <div class="loadmore">
-        <button class="loadmore__button">
+        <button class="loadmore__button" onclick = "addPoster()" >
             Load more
         </button>
     </div>
-    <script src="./index.js"></script>
 </body>
 
 </html>
